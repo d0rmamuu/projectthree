@@ -6,7 +6,7 @@ const Feedbacks = ({feedbacks,onDelete,onLike}) => {
 		<>
 		{
 			feedbacks.map((feedback)=>(
-			<Feedback key={feedback.id} feedback={feedback} 
+			<Feedback key={feedback._id} feedback={feedback} 
 			onDelete={onDelete}
 			onLike={onLike}
 			/>

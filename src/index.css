@@ -84,7 +84,7 @@ body {
 
 .feedback.like {
   border: 2px solid rgb(233, 112, 132);
-  background: #e0a9a9;
+  background: #dbd0d0;
 }
 
 .feedback h3 {
@@ -126,11 +126,6 @@ body {
 .form-control-check input {
   flex: 2;
   height: 20px;
-}
-
-.line {
-  text-align: right;
-  background: #e0a9a9;
 }
 
 .footer {

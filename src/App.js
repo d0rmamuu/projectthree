@@ -35,15 +35,15 @@ const toggleLike=(feedback,id)=>{
 	{...feedback, like:!feedback.like}: feedback))
 }
 
-
 	//add feedback
 const addFeedback=async (feedback) =>{
 	await axios.post('/feedbacks',{
     comment:feedback.comment,
     like:feedback.like
   })
-  const newFeedback={...feedback}  
-    setfeedbacks([...feedbacks,newFeedback])
+  const _id=Math.floor(Math.random() * 10000)+1
+  const newFeedback={ _id, ...feedback}  
+	setfeedbacks([...feedbacks,newFeedback])
     
 	console.log(feedback.comment)
 	console.log(feedback)
@@ -59,7 +59,7 @@ const addFeedback=async (feedback) =>{
       onDelete={deleteFeedback}
       onLike={toggleLike}
       />
-      ):(<span className="line">No Feedback to Show</span>)}
+      ):(<>No feedback to Show</>)}
       
       <Footer />
     </div>

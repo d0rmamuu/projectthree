@@ -44,7 +44,7 @@ const addFeedback=async (feedback) =>{
   const _id=Math.floor(Math.random() * 10000)+1
   const newFeedback={ _id, ...feedback}  
 	setfeedbacks([...feedbacks,newFeedback])
-    
+     
 	console.log(feedback.comment)
 	console.log(feedback)
 } 
